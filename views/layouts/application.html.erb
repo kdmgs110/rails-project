@@ -6,9 +6,17 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
+  <body>
+    <div class="navibar">
+        <img src="puzzlewith.JPG" class="logo">
+        <div  class = "naviMenu">
+            <ul>
+                <li class="upgrade"><a href="">Learning</a></li>
+                <li class="upgrade"><a href="">Puzzled</a></li>
+                <li class="upgrade"><a href="">Friends</a></li>
+            </ul>   
+        </div>    
+    </div>
 <%= yield %>
-
 </body>
 </html>
