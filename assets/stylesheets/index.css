@@ -1,143 +1,31 @@
 body{
-    font-size:20px;
-    line-height: 30px;
-    font-family: 'Oxygen', sans-serif;
+    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif, normal;
 }
-a{
-    text-decoration: none
-}
+
 .navibar{
-    border-bottom:1px solid #e9eaea;
     font-size:20px;
-    height:80px; 
-    margin-top: 20px;
+    padding:10px 0px 10px 0px;
+    border-bottom:solid 1px #dfdfdf;
 }
-.logo{
-    margin-top:10px;
-    width: 140px;
-    height:60px;
-    padding:0px 0px 30px 0px;
-}
-.naviMenu{
-    float:right;
-    padding-right:35px;
-}
-.naviMenu li{
-    float:left;
-    display:inline-block;
-    margin: auto 0;
-    padding:15px 30px 15px 30px;
-    font-size:20px;
-    margin-right: 35px;
-}
-.upgrade{
-     color:white;   
-    background-color:#37c2aa;
-}
-.profile{
-    width:30px;
-    height:30px;   
-    border-radius:50%;
-}
-.currentStage{
-    height:300px;
-}
-.languageExplanation{
-float:left;
-    width:49.5%;
-    height:300px;
-    border-right:1px #37c2aa solid;    
-}
-
-.languageTitle{
-    font-size:40px;
-    padding:40px;
-}
-.ongoing{
- float:right;
-    width:49.5%;
-    height:300px;
-    text-align: center;
-}
-.apple{
-    width:100px;
-    height:100px;
+.naviText{
+    list-style:none;
     text-align:center;
-    margin:0 auto;
-    padding-top: 80px;
-}
-.continue{
-    text-align: center;
-    bachground-color:green;
-    margin:40px;   
-}
-.continue:hover{
-    text-align: center;
-    bachground-color:green;
-    margin:40px;
-    opacity:0.7;
-}
-#continue{
-     background-color:#37c2aa;
-    margin:400px; 
-    font-size:30px;
-    padding:20px 80px 20px 80px; 
-    color:white;
-}
-.final{
-    height:80px;
-    background:#37c2aa;
-    margin-top:40px;
-}
-.final li{
-    display: inline-block;
-    width:33%;
-    color:white;
-}
-.left{
-    text-align: left;
-}
-.center{
+    border: #19b6c2 solid 1px;
+    color:#19b6c2;
+    text-decoration:none;
+    }
+.naviText:link{
+    list-style:none;
     text-align:center;
-}
-.right{
-    text-align: right;
-}
-.curriculam{
-    height:auto;
-    width:100%;
-    background-color:azure;
-    margin-top:100px;
-    border-top: 1px solid grey;
-    margin: 0 auto;
-    background-color:#e9eaea;
-}
-.chapter{
-    width:80%;
-    margin:0 auto;
-    background-color:white;
-    margin-top:5px;
-    padding:40px;
-    boarder-top:1px solid grey;
-    boarder-bottom:1px solid grey;
-}
-.chapterAdd{
-    width:80%;
-    margin:0 auto;
-    background-color:#37c2aa;
+    border: #19b6c2 solid 1px;
+    color:#19b6c2;
+    text-decoration:none;
+    }
+.naviText:hover{
+    list-style:none;
+    text-align:center;
+    border: #19b6c2 solid 1px;
     color:white;
-    margin-top:5px;
-    padding:40px;
-    boarder-top:1px solid grey;
-    boarder-bottom:1px solid grey;
-}
-
-
-.unitName{
-    margin:40px 0px 40px 0px;
-    width:85%;
-}
-.footer{
-    background-color:#e1e1e1;
-    height:600px;
-}
+    text-decoration:none;
+    background-color:#19b6c2;
+    }

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>LearnWith</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
   <body>
-    <div class="navibar">
-        <img src="puzzlewith.JPG" class="logo">
-        <div  class = "naviMenu">
+    <div class="container-fluid">
+    <div class= "navibar row">
+        <div class="col-md-3"><img src="/dai-rails-project/app/assets/images/puzzlewith.JPG"></div><!-- img div-->
+        <div class = "col-md-9 naviMenu">
             <ul>
-                <li class="upgrade"><a href="">Learning</a></li>
-                <li class="upgrade"><a href="">Puzzled</a></li>
-                <li class="upgrade"><a href="">Friends</a></li>
-            </ul>   
-        </div>    
-    </div>
+                <div class="col-md-4"><li class="naviText text-primary"><a href="">Learning</a></li></div>
+                <div class="col-md-4"><li class="naviText text-primary"><a href="">Puzzled</a></li></div>
+                <div class="col-md-4"><li class="naviText text-primary"><a href="">Friends</a></li></div>
+            </ul>
+            </div> <!-- col-md-9 naviMenu -->
+      </div><!--navibar row-->    
+    </div> <!-- container-fluid-->
 <%= yield %>
 </body>
 </html>
