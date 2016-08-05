@@ -1,1 +1,4 @@
-<p>this line of message appears below the navibar frin index.html.erb</p>
+<% @ideas.each do |idea| %>
+  <h3><%= idea.description %></h3>
+  <h4><%= idea.author %></h4>
+<% end %>
