@@ -1,4 +1,17 @@
+<%= simple_form_for Idea.new do |f| %>
+  <%= f.input :description %>
+  <%= f.input :author %>
+  <%= f.submit 'Submit', class:"btn btn-primary" %>
+<% end %>
 <% @ideas.each do |idea| %>
-  <h3><%= idea.description %></h3>
-  <h4><%= idea.author %></h4>
+<div class="container-fluid">
+    <div class="row">
+        <div class="panel panel-default col-md-12 col-xs-12 center-block" style="text-align:center;margin-top:20px" >
+          <div class="panel-heading panel-primary"><h3><%= idea.author %></h3></div>
+          <div class="panel-body">
+            <h3><%= idea.description %></h3>
+        </div>
+        </div> <!-- panel panel default-->
+    </div>
+</div>
 <% end %>
