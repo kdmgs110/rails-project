@@ -24,6 +24,9 @@ def destroy
   @idea.destroy
   redirect_to root_path
 end
+def index
+  @ideas = Idea.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
+end
 
   
    private
