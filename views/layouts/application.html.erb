@@ -20,6 +20,26 @@
             </div> <!-- col-md-9 naviMenu -->
       </div><!--navibar row-->    
     </div> <!-- container-fluid-->
+<div id = "back-to-top" style = "position:fixed;right:5px;bottom:5px"><img src="https://www.signmall.jp/imagebank/item/normal/UNI-862-35.gif" width ="100px" height ="100px" style="border-radius:30%"></div>
+<script>
+  $(function(){
+    $("#back-to-top").hide();
+  //スクロールが十分された#back-to-topを表示、スクロールが戻ったら非表示
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 60){
+    $("#back-to-top").fadeIn();
+  }); 
+  else{
+  $("#back-to-top").fadeOut();
+  });
+  $("#back-to-top").click(function(){
+  $("body").animate({scrollTop:0},500);
+  return false;
+  });
+
+</script>
+  
+    
 <%= yield %>
 </div><!-- wrap -->
 <div id="footer">
